@@ -36,7 +36,6 @@ public class AccountSummaryPage  extends GenericWrrappers {
 			clickByXpath("//button[@ng-click = 'withdrawl()']");
 			WebDriverWait wait = new WebDriverWait(driver,30);
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder = 'amount']")));
-			waittime(2000);
 			enterByXpath("//input[@placeholder = 'amount']", amount);
 			clickByXpath("//button[@type= 'submit' and text() = 'Withdraw']");
 		}
